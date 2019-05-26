@@ -1,0 +1,147 @@
+body {
+  background: url(../images/bg-1.jpg);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color:#000;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  overflow: scroll;
+}
+
+/* Pulse Opening */
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  overflow: hidden;
+  transition: .5s;
+  box-sizing: border-box;
+  transition: clip-path .5s;
+}
+.container > .box{
+  width: 100%;
+  height: 67%;
+  position: absolute;
+  top: 0;
+  transition: .5s ease-in-out;
+  background: white;
+  z-index: 9;
+  clip-path: polygon(0% 77.64%, 0% 0%, 100% 0%, 100% 75.38%, 66.4% 75.62%, 64.72% 84.8%, 57.15% 34.05%, 51.85% 74.97%, 50.39% 64.01%, 46.66% 97.5%, 41.58% 44.02%, 36.28% 77.33%, 22.36% 77.56%);
+  animation: openpulse-up 2s ease-out forwards;
+}
+.container > .box-1{
+  width: 100%;
+  height: 76%;
+  position: absolute;
+  bottom: 0;
+  transition: .5s ease-in-out;
+  background: white;
+  z-index: 9;
+  clip-path: polygon(0% 100%, 0% 37.02%, 36.21% 36.9%, 41.54% 8.04%, 46.53% 53.8%, 50.41% 25.35%, 51.97% 34.2%, 57.25% -1.41%, 64.66% 44.09%, 66.29% 35.17%, 100% 34.81%, 100% 100%);
+  animation: openpulse-down 2s ease-out forwards;
+}
+@keyframes openpulse-up{
+  0%{
+    top: 0;
+  }
+  50%{
+    top: -20%;
+  }
+  60%{
+    top: -10%;
+  }
+  70%{
+    top: -3%;
+  }
+  100%{
+    top: -100%;
+  }
+}
+@keyframes openpulse-down{
+  0%{
+    bottom: 0;
+  }
+  50%{
+    bottom: -20%;
+  }
+  60%{
+    bottom: -10%;
+  }
+  70%{
+    bottom: -3%;
+  }
+  100%{
+    bottom: -100%;
+  }
+}
+
+/* End Opening */
+
+.head{
+  position: absolute;
+  top: 110vh;
+  width: 100%;
+  text-align: center;
+  color: #ff5e4c;
+  font-size:20px; 
+  margin-top: 70px;
+}
+.swiper-container {
+  top: 130vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.about-container{
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-container > .abt-head{
+  width: 100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #ff5e4c;
+  font-size: 20px;
+}
+.about-container > .abt-head > h1{
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.about-container > .abt-head > a{
+  text-decoration: none;
+  color: #ff5e4c;
+}
+.about-container > .abt-head .fas{
+  position: absolute;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-size: 40px;
+}
+.about-container > .abt-content{
+  width: 80%;
+  height: 80vh;
+  border: 1px solid ;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px white inset;
+}

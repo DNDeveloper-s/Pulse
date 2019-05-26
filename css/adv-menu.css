@@ -1,0 +1,132 @@
+    .menu-container {
+        width: 50px;
+        height: 40px;
+        position: relative;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .bar{
+        width: 100%;
+        height: 5px;
+        position: absolute;
+        background: #ff5e4c;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+
+    /* Top Bar */
+
+    .bar-1{
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all .5s ease-in-out ;
+    }
+    .menu-container:hover > .bar-1{
+        animation: incr-1 .8s ease-in-out;
+    }
+    .rot-1{
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateZ(405deg);
+        background: #fff;
+    }
+
+
+    /* Middle Bar */
+
+    .bar-2{
+        width: 80%;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: transform .5s ease-in-out, opacity .2s ease-in-out .2s, background .5s ease-in-out;
+    }
+    .menu-container:hover > .bar-2{
+        animation: incr-2 .6s ease-in-out .1s;
+    }
+    .rot-2{
+        transform: translate(0, -50%) rotateZ(130deg);
+        opacity: 0;
+        background: #fff;
+    }
+
+
+    /* Bottom Bar */
+
+    .bar-3{
+        width: 60%;
+        top: 100%;
+        transform: translate(0, -100%) rotateZ(0deg);
+        left: 0;
+        transition: all .5s ease-in-out;
+    }
+    .menu-container:hover > .bar-3{
+        animation: incr-3 .4s ease-in-out .2s;
+    }
+    .rot-3{
+        top: 50%;
+        bottom: auto;
+        left: 50%;
+        width: 130%;
+        transform: translate(-50%, -50%) rotateZ(310deg);
+        background: #fff;
+    }
+
+
+    /* Keyframes Section */
+    
+    @keyframes incr-1{
+        0%{
+            width: 100%;
+        }
+        45%{
+            width: 130%;
+        }
+        70%{
+            width: 100%;
+        }
+        85%{
+            width: 115%;
+        }
+        100%{
+            width: 100%;
+        }
+    }
+    
+    @keyframes incr-2{
+        0%{
+            width: 80%;
+        }
+        45%{
+            width: 110%;
+        }
+        70%{
+            width: 80%;
+        }
+        85%{
+            width: 95%;
+        }
+        100%{
+            width: 80%;
+        }
+    }
+    
+    @keyframes incr-3{
+        0%{
+            width: 60%;
+        }
+        45%{
+            width: 90%;
+        }
+        70%{
+            width: 60%;
+        }
+        85%{
+            width: 75%;
+        }
+        100%{
+            width: 60%;
+        }
+    }

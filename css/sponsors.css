@@ -1,0 +1,146 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url('../Images/bg-1.jpg');
+}
+.head{
+	display: flex;
+	height: auto;
+	margin-top:2%;
+}
+.head h1{
+	text-align: center;
+	color:red;
+	width: 100%;
+	letter-spacing: 2px;
+	font-size: 70px;
+}
+.head .fas{
+	font-size: 50px;
+	color: red;
+	margin-left:2%;
+}
+.container-1{
+	margin:4% auto;
+	width:70%;
+	height: auto;
+}
+.container-1 h1{
+	display: flex;
+	justify-content: space-around;
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-top: 2%;
+	text-align: center;
+	color :#fbb03b;
+	position: relative;
+}
+.container-1 .cont-1{
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-around;
+}
+.container-1 .cont-1 .box{
+	overflow: none;
+	height: 200px;
+	width: 300px;
+}
+.container-1 .cont-1 .box img{
+	width:100%;
+	height: auto;
+}
+
+.container-2{
+	margin:5% auto;
+	width:90%;
+	height: auto;
+}
+.container-2 h1{
+	display: flex;
+	text-transform: uppercase;
+	justify-content: space-around;
+	font-size: 40px;
+	letter-spacing: 2px;
+	margin-top: 2%;
+	text-align: center;
+	color :#fbb03b;
+	position: relative;
+}
+.container-2 .cont-2{
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-around;
+}
+.container-2 .cont-2 .bo{
+	overflow: none;
+	height: 200px;
+	width: 300px;
+}
+.container-2 .cont-2 .bo img{
+	width:100%;
+	height: auto;
+}
+
+
+.container-2 .cont-3{
+	display: flex;
+	margin-top: 5%;
+	justify-content: space-around;
+}
+.container-2 .cont-3 .b{
+	overflow: none;
+	height: 200px;
+	width: 300px;
+}
+.container-2 .cont-3 img:nth-child(3){
+
+}
+
+@media (max-width: 989px)
+{
+	.head h1{
+		font-size: 45px;
+	}
+	.head .fas{
+		font-size: 35px;
+	}
+	.container-1 .cont-1{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5%;
+	}
+	.container-1 h1{
+		font-size: 30px;
+		margin-top: 20%;
+	}
+	.container-1 .cont-1 .box{
+		margin-top: 5%;
+	}
+	.container-2  h1{
+		font-size: 30px;
+		margin-top: 20%;
+	}
+	.container-2 .cont-2{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5%;
+		margin-left: 10%;
+	}
+	.container-2 .cont-2 .bo{
+		margin-top: 10%;
+
+	}
+
+
+
+	.container-2 .cont-3{
+		flex-direction: column;
+		align-items: center;
+		margin-top: 5%;
+		margin-left: 10%;
+	}
+	.container-2 .cont-3 .b{
+		margin-top: 10%;
+}
